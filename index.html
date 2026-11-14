@@ -752,7 +752,7 @@ window.onload = () => {
 
   // No saved database: ask the user to upload the Excel file
   document.getElementById("list").innerHTML =
-    "<p style='padding:20px;color:#64748b;'>Please upload employee Excel database to continue.</p>";
+    "<p style='padding:20px;color:#64748b;'>Please upload Excel database to continue</p>";
 };
 
 
@@ -796,7 +796,7 @@ fileInput.onchange = e => {
     } catch(error) {
 
       console.error("Excel loading / local storage error:", error);
-      alert("Unable to load or save the Excel data. Please check the file and available browser storage.");
+      alert("Unable to load or save the Excel data. Please check the file and available browser storage");
 
     }
 
@@ -805,7 +805,7 @@ fileInput.onchange = e => {
   };
 
   reader.onerror = () => {
-    alert("Unable to read the selected file.");
+    alert("Unable to read the selected file");
     fileInput.value = "";
   };
 
